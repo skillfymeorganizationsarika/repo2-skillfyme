@@ -1,0 +1,15 @@
+name: This is first workflow in github action 
+on: workflow_dispatch  # workflow executed manually
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute a single command 
+        run: echo "Hello AlL"
+  job2: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exeucte set of commands
+        run: |
+          hostname -s
+          echo "Bye Bye"
